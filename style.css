@@ -1,0 +1,66 @@
+/* Google Fonts - Old Standard TT - Regular 400 */
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+
+/* Se puede observar que se usan prácticas de maquetación antiguas antes de que exista FlexBox */
+body {
+    background: #08857a;
+    margin: 0;
+    padding: 0;
+    font-family: 'Old Standard TT', serif;
+}
+
+ul {
+    margin: 0;
+    padding: 50px;
+    border: 10px solid rgb(197, 232, 236);
+    display: inline-block;
+    border-radius: 50px 0 50px 0;
+    box-shadow: 5px 5px 9px #090f0f;
+    background-color: #061616;
+    /* Permite centrar horizontal y verticalmente el elemento en el viewport */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+ul li {
+    list-style: none;
+    color: rgb(153, 241, 241);
+    float: left;
+    font-size: 5em; /* 80px */
+    transition: .9s;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+
+ul:hover li {
+    transform: rotateY(360deg);
+}
+
+ul:hover li:nth-child(1) {
+    transition-delay: .9s;
+}
+
+ul:hover li:nth-child(2) {
+    transition-delay: .6s;
+}
+
+ul:hover li:nth-child(3) {
+    transition-delay: .3s;
+}
+
+@media screen and (max-width: 768px) {
+
+    ul {
+        padding: 25px;
+        border: 5px solid rgb(197, 232, 236);
+    }
+
+    ul li {
+        font-size: 2em;
+        transition: .9s;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+    }
+}
